@@ -2,8 +2,10 @@
 from distutils.command.upload import upload
 import streamlit as st
 import pandas as pd
+import pip
 import matplotlib.pyplot as plt
 #import plotly.express as px
+pip.main(["install", "openpyxl"])
 st.header("Podaci o saobraćajnim nezgodama")
 st.write("Na ovoj strani možete analizirati podatke o saobraćajnim nesrećama u Republici Srbiji.")
 st.write("Da bi ispravno koristili aplikaciju neophodno je da preuzmete podatke sa portala otvorenih podataka data.gov.")
